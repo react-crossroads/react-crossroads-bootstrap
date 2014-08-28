@@ -1,7 +1,7 @@
 {
-  "name": "react-router-bootstrap",
+  "name": "react-crossroads-bootstrap",
   "version": "0.4.6",
-  "description": "react-router and react-bootstrap compatible components",
+  "description": "react-crossroads and react-bootstrap compatible components",
   "main": "./lib/index.js",
   "scripts": {
     "prepublish": "./node_modules/gulp/bin/gulp.js build",
@@ -9,22 +9,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mtscout6/react-router-bootstrap.git"
+    "url": "git@github.com:mtscout6/react-crossroads-bootstrap.git"
   },
   "keywords": [
     "react",
-    "react-router",
+    "react-crossroads",
     "react-bootstrap"
   ],
   "author": "Matt Smith <mtscout6@gmail.com>",
-  "license": "Apache2",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mtscout6/react-router-bootstrap/issues"
+    "url": "https://github.com/mtscout6/react-crossroads-bootstrap/issues"
   },
-  "homepage": "https://github.com/mtscout6/react-router-bootstrap",
+  "homepage": "https://github.com/mtscout6/react-crossroads-bootstrap",
   "peerDependencies": {
     "react-bootstrap": "^0.11.1",
-    "react-router": "^0.5.1"
+    "react-crossroads": "^0.2.0"
   },
   "devDependencies": {
     "coffee-script": "^1.7.1",

@@ -1,21 +1,22 @@
 React = require 'react'
-ActiveState = require 'react-router/modules/mixins/ActiveState'
-RouteToMixin = require './RouteToMixin'
+ActiveState = require 'react-crossroads/lib/mixins/ActiveState'
+RouteTo = require 'react-crossroads/lib/mixins/RouteTo'
 
 IsActiveMixin =
-  mixins: [ ActiveState, RouteToMixin ]
+  mixins: [
+    ActiveState
+    RouteTo
+  ]
 
   getInitialState: ->
     isActive: false
 
   componentWillReceiveProps: (nextProps) ->
-    params = @getUnreservedProps nextProps, @additionalReservedProps
-
     @setState
-      isActive: ActiveState.statics.isActive nextProps.to, params, nextProps.query
+      isActive: ActiveState.statics.isActive nextProps.to, nextProps.params
 
   updateActiveState: ->
     @setState
-      isActive: ActiveState.statics.isActive @props.to, @getParams(), @props.query
+      isActive: ActiveState.statics.isActive @props.to, @props.params
 
 module.exports = IsActiveMixin

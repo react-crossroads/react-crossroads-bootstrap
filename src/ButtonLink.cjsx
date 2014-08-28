@@ -1,15 +1,10 @@
 React = require 'react'
 Button = require 'react-bootstrap/Button'
-RouteToMixin = require './RouteToMixin'
-
-ADDITIONAL_RESERVED_PROPS =
-  key: true
-  ref: true
+RouteTo = require 'react-crossroads/lib/mixins/RouteTo'
 
 ButtonLink = React.createClass
   displayName: 'ButtonLink'
-  mixins: [ RouteToMixin ]
-  additionalReservedProps: ADDITIONAL_RESERVED_PROPS
+  mixins: [ RouteTo ]
   render: ->
     @transferPropsTo(
       <Button
