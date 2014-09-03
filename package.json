@@ -1,6 +1,6 @@
 {
   "name": "react-crossroads-bootstrap",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "react-crossroads and react-bootstrap compatible components",
   "main": "./lib/index.js",
   "scripts": {
