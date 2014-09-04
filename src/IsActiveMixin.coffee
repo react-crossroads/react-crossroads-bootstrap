@@ -13,10 +13,10 @@ IsActiveMixin =
 
   componentWillReceiveProps: (nextProps) ->
     @setState
-      isActive: ActiveState.statics.isActive nextProps.to, nextProps.params
+      isActive: @isActive nextProps.to, nextProps.params
 
   updateActiveState: ->
     @setState
-      isActive: ActiveState.statics.isActive @props.to, @props.params
+      isActive: @isActive @props.to, @props.params
 
 module.exports = IsActiveMixin
