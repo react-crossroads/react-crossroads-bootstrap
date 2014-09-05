@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/mtscout6/react-crossroads-bootstrap",
   "peerDependencies": {
-    "react-bootstrap": "^0.11.1",
+    "react-bootstrap": "^0.11.0",
     "react-crossroads": "^0.7.0"
   },
   "devDependencies": {
